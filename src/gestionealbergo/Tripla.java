@@ -1,8 +1,10 @@
 package gestionealbergo;
 
-public class Tripla {
-	
-	public Tripla(String numero){
-		this.numero=numero;
+public class Tripla extends Camera{
+
+	public Tripla(String numero) {
+		super(numero);
 	}
+
+
 }

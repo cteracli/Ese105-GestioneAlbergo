@@ -1,8 +1,11 @@
 package gestionealbergo;
 
-public class Doppia {
-	
-	public Doppia(String numero){
-		this.numero=numero;
+public class Doppia extends Camera{
+
+	public Doppia(String numero) {
+		super(numero);
 	}
+	
+	
+
 }

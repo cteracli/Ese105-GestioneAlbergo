@@ -8,7 +8,6 @@ public class Cliente{
 	private String cognome;
 	private String cellulare;
 	private String email;
-	private Vector<Prenotazione> prenotazioni; 
 	
 	public Cliente(String nome, String cognome, String cellulare, String email){
 		this.nome=nome;
@@ -29,9 +28,6 @@ public class Cliente{
 	}
 	public String getEmail() {
 		return email;
-	}
-	public Vector<Prenotazione> getPrenotazioni(){
-		return prenotazioni;
 	}
 	
 	public void setNome(String nome) {
