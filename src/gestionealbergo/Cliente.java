@@ -1,7 +1,5 @@
 package gestionealbergo;
 
-import java.util.Vector;
-
 public class Cliente{
 	
 	private String nome;
@@ -14,34 +12,36 @@ public class Cliente{
 		this.cognome=cognome;
 		this.cellulare=cellulare;
 		this.email=email;
-		
-	}
+		}
 
-	public String getNome() {
+	public String getNome(){
 		return nome;
 	}
-	public String getCognome() {
+	public String getCognome(){
 		return cognome;
 	}
-	public String getCellulare() {
+	public String getCellulare(){
 		return cellulare;
 	}
-	public String getEmail() {
+	public String getEmail(){
 		return email;
 	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNome(String nome){
+		this.nome=nome;
 	}
-	public void setCognome(String cognome) {
-		this.cognome = cognome;
+	public void setCognome(String cognome){
+		this.cognome=cognome;
 	}
-	public void setCellulare(String cellulare) {
-		this.cellulare = cellulare;
+	public void setCellulare(String cellulare){
+		this.cellulare=cellulare;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String email){
+		this.email=email;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", cognome=" + cognome + ", cellulare=" + cellulare + ", email=" + email + "]";
+	}
 }

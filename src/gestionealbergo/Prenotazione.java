@@ -20,46 +20,55 @@ public class Prenotazione {
 	}
 	
 	
-	public String getRichieste() {
+	public String getRichieste(){
 		return richieste;
 	}
-	public void setRichieste(String richieste) {
-		this.richieste = richieste;
-	}
-	public int getNumeroNotti() {
+	public int getNumeroNotti(){
 		return numeroNotti;
 	}
-	public void setNumeroNotti(int numeroNotti) {
-		this.numeroNotti = numeroNotti;
-	}
-	public LocalDateTime getArrivoIl() {
+	public LocalDateTime getArrivoIl(){
 		return arrivoIl;
 	}
-	public void setArrivoIl(LocalDateTime arrivoIl) {
-		this.arrivoIl = arrivoIl;
-	}
-	public LocalDateTime getEffettuatoIl() {
+	public LocalDateTime getEffettuatoIl(){
 		return effettuatoIl;
 	}
-	public void setEffettuatoIl(LocalDateTime effettuatoIl) {
-		this.effettuatoIl = effettuatoIl;
-	}
-	public LocalDateTime getClienteArrivaIl() {
+	public LocalDateTime getClienteArrivaIl(){
 		return clienteArrivaIl;
 	}
-	public void setClienteArrivaIl(LocalDateTime clienteArrivaIl) {
-		this.clienteArrivaIl = clienteArrivaIl;
-	}
-	public Cliente getCliente() {
+	public Cliente getCliente(){
 		return cliente;
 	}
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-	public Camera getCamera() {
+	public Camera getCamera(){
 		return camera;
 	}
-	public void setCamera(Camera camera) {
+	
+	public void setRichieste(String richieste){
+		this.richieste = richieste;
+	}
+	public void setNumeroNotti(int numeroNotti){
+		this.numeroNotti = numeroNotti;
+	}
+	public void setArrivoIl(LocalDateTime arrivoIl){
+		this.arrivoIl = arrivoIl;
+	}
+	public void setEffettuatoIl(LocalDateTime effettuatoIl){
+		this.effettuatoIl = effettuatoIl;
+	}
+	public void setClienteArrivaIl(LocalDateTime clienteArrivaIl){
+		this.clienteArrivaIl = clienteArrivaIl;
+	}
+	public void setCliente(Cliente cliente){
+		this.cliente = cliente;
+	}
+	public void setCamera(Camera camera){
 		this.camera = camera;
+	}
+
+	@Override
+	public String toString(){
+		return "Prenotazione [richieste=" + richieste + ", numeroNotti="
+				+ numeroNotti + ", arrivoIl=" + arrivoIl + ", effettuatoIl="
+				+ effettuatoIl + ", clienteArrivaIl=" + clienteArrivaIl
+				+ ", cliente=" + cliente + ", camera=" + camera + "]";
 	}
 }

@@ -2,7 +2,7 @@ package gestionealbergo;
 
 public class Singola extends Camera{
 
-	public Singola(String numero) {
+	public Singola(String numero){
 		super(numero);
 	}
 	

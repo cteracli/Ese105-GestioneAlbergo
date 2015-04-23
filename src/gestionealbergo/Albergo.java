@@ -2,14 +2,19 @@ package gestionealbergo;
 
 import java.util.Vector;
 
-public class Albergo {
+public class Albergo{
 	private Vector<Camera> camera;
 
-	public Vector<Camera> getCamera() {
+	public Vector<Camera> getCamera(){
 		return camera;
 	}
 
-	public void setCamera(Vector<Camera> camera) {
+	public void setCamera(Vector<Camera> camera){
 		this.camera = camera;
+	}
+
+	@Override
+	public String toString(){
+		return "Albergo [camera=" + camera + "]";
 	}
 }
